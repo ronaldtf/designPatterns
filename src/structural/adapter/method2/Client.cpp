@@ -16,6 +16,7 @@ int main()
 {
 	Interface *adapter1 = new AdapterClass<LegacyClass1>(new LegacyClass1(), &LegacyClass1::getClassName1);
 	std::cout << adapter1->method() << std::endl;
+	delete adapter1;
 	return 0;
 }
 

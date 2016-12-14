@@ -17,5 +17,6 @@ int main()
 	CreatorInterface *c = new Creator();
 	std::cout << c->factoryMethod()->getName() << std::endl;
 
+	delete c;
 	return 0;
 }
